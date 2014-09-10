@@ -209,7 +209,13 @@ uname -o | center
 uname -r | center
 uname -m | center
 echo
+cat /proc/cpuinfo | grep -m 1 "model name" | awk -F":" '{print $2}' | center
+free -m | grep Mem | awk '{print $3 "M of "$2"M RAM used ("$7"M cached)"}' | center
 df -h | grep "sdc1\|fuse" | awk '{print $4 " of "$3 "("$6") on "$7}' | center
+echo
+div
+echo
+echo "`python -m this`" | center
 echo
 div
 display-dhammapada | center
