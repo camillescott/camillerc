@@ -117,6 +117,7 @@ txtrst='\e[0m'    # Text Reset
 # personnal aliases
 #######
 
+alias bio='source activate bio'
 alias ipynb='ipython notebook --pylab inline'
 alias nbconvert='ipython nbconvert'
 
@@ -229,7 +230,7 @@ export PATH=$PATH:$HOME/bin:$HOME/scripts:$HOME/bin/tmhmm-2.0c/bin:$HOME/bin/rna
 export PATH=$PATH:$HOME/bin/trinityrnaseq_r20140413p1:$HOME/bin/trinityrnaseq_r20140413p1/trinity-plugins
 export PATH=$PATH:$HOME/bin/pycharm-community-3.4.1/bin
 
-BLASTDB=/w/blastdb
+BLASTDB=/w/biodb
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -240,3 +241,6 @@ fi
 
 PERL_MB_OPT="--install_base \"/home/camille/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/camille/perl5"; export PERL_MM_OPT;
+
+# added by Anaconda 2.0.1 installer
+export PATH="/home/camille/anaconda/bin:$PATH"
